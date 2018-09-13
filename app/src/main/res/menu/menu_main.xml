@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.prakash.smsapp.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Vagan"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="100"
+        android:title="Gadi"
+        app:showAsAction="never" />
+
+
+</menu>

@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sai Trading Company,Nandgaon" />
+
+    <TextView
+        android:id="@+id/tv_current_Date1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linear_gadi"
+                android:padding="9dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="4">
+
+
+
+                        <TextView
+                            android:text="Gadi NO:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView41"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"
+                            />
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:id="@+id/edt_gadi_no"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Loding Bags:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView411"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="20sp"
+                            android:id="@+id/edt_loding_bags"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="7dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Marka:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView44"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:textSize="20sp"
+                            android:id="@+id/edt_mark"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+
+                        <!-- <Spinner
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:inputType="textPersonName"
+                             android:id="@+id/sp_select_building"
+                             android:layout_weight="1" />-->
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Loading Weignt:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_select_trades"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="20sp"
+                            android:id="@+id/edt_loading_weight"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Rate:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_rate1"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="20sp"
+                            android:id="@+id/edt_rate"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/tv_sub_total"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="20sp"
+                            android:id="@+id/edt_sub_total"
+                            android:textColor="@color/colorBlack"
+                            android:enabled="false"
+                            android:layout_weight="2" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Gadi Advance:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_advance"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="20sp"
+                            android:id="@+id/edt_advance"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Total Amount:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_adva"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="20sp"
+                            android:id="@+id/edt_total_amount"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2"
+                            android:enabled="false"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/tv_advasence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Driver Name:"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/edt_driver_name"
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Driver Mobile No:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_rrg"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="20sp"
+                            android:id="@+id/edt_driver_mobile_no"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+
+                    </TableRow>
+
+
+
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:weightSum="5">
+
+                    <EditText
+                        android:id="@+id/edt_Mobile_no_send_sms"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:hint="Select Mobile No"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:id="@+id/select_contact"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/c1"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+
+                    <Button
+                        android:text="Send Message"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/btn_send_sms"
+                        android:layout_marginRight="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#ffffff"
+                        android:background="@color/colorBlack"/>
+
+                    <!--<ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="61dp"
+                        android:layout_height="54dp"
+                        app:srcCompat="@drawable/contacts" />-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linear_vagan"
+                android:padding="9dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="4">
+
+
+
+                        <TextView
+                            android:text="Box no:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ds"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"
+                            />
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:id="@+id/edt_v_box_no"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Loding station:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViews411"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="18sp"
+                            android:id="@+id/sp_v_loding_station"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+                    </TableRow>
+
+
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Loading date:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_selectw_trades"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:textSize="18sp"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:id="@+id/edt_v_loding_date"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Loding bags:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_lb"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="18sp"
+                            android:id="@+id/edt_v_loding_bags"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="7dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Marka:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textViewz44"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:textSize="18sp"
+                            android:id="@+id/edt_v_marka"
+                            android:text="Sai Marka"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+
+                        <!-- <Spinner
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:inputType="textPersonName"
+                             android:id="@+id/sp_select_building"
+                             android:layout_weight="1" />-->
+
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Loding_weight:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_advancea"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="18sp"
+                            android:id="@+id/edt_v_loding_weight"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Rate:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_xadva"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textSize="18sp"
+                            android:id="@+id/edt_v_rate"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:text="Total amount:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_advasednce"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:textSize="18sp"
+                            android:id="@+id/edt_v_total_amount"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="2" />
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:weightSum="5">
+
+                    <EditText
+                        android:id="@+id/edt_v_Mobile_no_send_sms"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:hint="Select Mobile No"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:id="@+id/select_v_contact"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/c1"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+
+                    <Button
+                        android:text="Send Message"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/btn_send_v_sms"
+                        android:layout_marginRight="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#ffffff"
+                        android:background="@color/colorBlack"/>
+
+                    <!--<ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="61dp"
+                        android:layout_height="54dp"
+                        app:srcCompat="@drawable/contacts" />-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

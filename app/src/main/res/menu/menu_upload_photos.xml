@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qflow.commisioningapp.UploadDamgePhotosActivity">
+    <item
+        android:id="@+id/action_camera"
+        android:orderInCategory="100"
+        android:title="Settings"
+        android:icon="@drawable/train_icon"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_brows"
+        android:orderInCategory="100"
+        android:title="Settings"
+        android:icon="@drawable/truck_icon"
+        app:showAsAction="always"/>
+
+
+</menu>
